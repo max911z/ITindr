@@ -17,7 +17,6 @@
     </ul>
   </li>
 </ul>
-      
 <rp>The application implements work with the API through third-party libraries. Layout through XIB files.</rp>
 <h3 align="left">More project screenshots</h3>     
 <img src="https://user-images.githubusercontent.com/80741988/159171084-4c5963ba-406b-484d-97ea-52dbff04181f.png" height="auto" width="auto">
