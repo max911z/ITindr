@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": null,
+          "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+          "version": "5.4.4"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher",
+        "state": {
+          "branch": null,
+          "revision": "318e319998bf555c3e914d5c3adb6da05af86a32",
+          "version": "7.1.1"
+        }
+      },
+      {
+        "package": "TagListView",
+        "repositoryURL": "https://github.com/ElaWorkshop/TagListView",
+        "state": {
+          "branch": null,
+          "revision": "b30b61826736f4d9ec04aef5df891f3914423f16",
+          "version": "1.4.1"
+        }
+      },
+      {
+        "package": "TTGTags",
+        "repositoryURL": "https://github.com/zekunyan/TTGTagCollectionView",
+        "state": {
+          "branch": null,
+          "revision": "7539583a7cb7ad278945461ea26e985e759554b4",
+          "version": "2.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

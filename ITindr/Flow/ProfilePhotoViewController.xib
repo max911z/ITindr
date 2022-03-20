@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MontserratBold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="MontserratRegular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfilePhotoViewController" customModule="ITindr" customModuleProvider="target">
+            <connections>
+                <outlet property="tagListView" destination="l5h-oG-Vkf" id="HM2-7N-2oZ"/>
+                <outlet property="userImage" destination="RA1-Y9-DUj" id="1Af-ED-WrV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 2" translatesAutoresizingMaskIntoConstraints="NO" id="RA1-Y9-DUj" userLabel="userPhoto">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 3" translatesAutoresizingMaskIntoConstraints="NO" id="odC-eO-tOb" userLabel="navBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 4" translatesAutoresizingMaskIntoConstraints="NO" id="Ojs-Cs-4ZT" userLabel="tabBar">
+                    <rect key="frame" x="0.0" y="620" width="375" height="192"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Андрей Иванов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbg-eD-L8s">
+                    <rect key="frame" x="16" y="629.66666666666663" width="205" height="30"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Люблю программировать на питоне. Люблю изучать питон. Люблю всё, что угодно, связанное с питоном. А еще я люблю перл." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuk-4U-Ofe">
+                    <rect key="frame" x="16" y="667.66666666666663" width="343" height="39.333333333333371"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5h-oG-Vkf" customClass="TagListView" customModule="TagListView">
+                    <rect key="frame" x="16" y="723" width="343" height="49"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wuk-4U-Ofe" secondAttribute="trailing" constant="16" id="09I-20-nhG"/>
+                <constraint firstAttribute="bottom" secondItem="RA1-Y9-DUj" secondAttribute="bottom" id="0Mf-eR-rSc"/>
+                <constraint firstItem="Ojs-Cs-4ZT" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3F0-LJ-b6b"/>
+                <constraint firstItem="RA1-Y9-DUj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4M0-nH-Arf"/>
+                <constraint firstItem="odC-eO-tOb" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.20197" id="7zv-Vn-txM"/>
+                <constraint firstItem="odC-eO-tOb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CuW-9y-BUd"/>
+                <constraint firstItem="Ojs-Cs-4ZT" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="EVN-hg-E0b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l5h-oG-Vkf" secondAttribute="trailing" constant="16" id="JBH-y9-SHx"/>
+                <constraint firstItem="Ojs-Cs-4ZT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KME-1H-ZWB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RA1-Y9-DUj" secondAttribute="trailing" id="Q0j-bY-18Z"/>
+                <constraint firstItem="l5h-oG-Vkf" firstAttribute="top" secondItem="wuk-4U-Ofe" secondAttribute="bottom" constant="16" id="Q4a-rT-mmH"/>
+                <constraint firstAttribute="bottom" secondItem="l5h-oG-Vkf" secondAttribute="bottom" constant="40" id="QGa-DR-2kj"/>
+                <constraint firstItem="RA1-Y9-DUj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="R1D-nd-vdz"/>
+                <constraint firstItem="l5h-oG-Vkf" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.914667" id="SiU-Qg-am1"/>
+                <constraint firstItem="Ojs-Cs-4ZT" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.236453" id="TTo-ns-4YP"/>
+                <constraint firstItem="l5h-oG-Vkf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="U1G-Nq-JRp"/>
+                <constraint firstItem="odC-eO-tOb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XJ2-cg-AFL"/>
+                <constraint firstItem="odC-eO-tOb" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="XKU-dL-gOb"/>
+                <constraint firstItem="Cbg-eD-L8s" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.546667" id="ez9-lx-R7y"/>
+                <constraint firstItem="l5h-oG-Vkf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0603448" placeholder="YES" id="fMx-sC-m7W"/>
+                <constraint firstItem="wuk-4U-Ofe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="mnt-gh-Jrj"/>
+                <constraint firstAttribute="bottom" secondItem="Ojs-Cs-4ZT" secondAttribute="bottom" id="nlg-gk-bGG"/>
+                <constraint firstItem="wuk-4U-Ofe" firstAttribute="top" secondItem="Cbg-eD-L8s" secondAttribute="bottom" constant="8" id="pzN-Ti-7n0"/>
+                <constraint firstItem="wuk-4U-Ofe" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.914667" id="r5B-qD-GTR"/>
+                <constraint firstItem="Cbg-eD-L8s" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0369458" id="rN3-9n-bJG"/>
+                <constraint firstItem="odC-eO-tOb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ror-1i-v6Y"/>
+                <constraint firstItem="wuk-4U-Ofe" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0484401" id="vpl-wJ-6b5"/>
+                <constraint firstItem="Cbg-eD-L8s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="yKP-K1-iab"/>
+            </constraints>
+            <point key="canvasLocation" x="-152.80000000000001" y="56.896551724137936"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="l5h-oG-Vkf">
+            <size key="intrinsicContentSize" width="343" height="49"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Rectangle 2" width="187.5" height="406"/>
+        <image name="Rectangle 3" width="187.5" height="64"/>
+        <image name="Rectangle 4" width="187.5" height="96"/>
+    </resources>
+</document>
