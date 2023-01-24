@@ -1,5 +1,4 @@
 <h1 align="left">ITindr</h1>
-<rp><strong>ITindr</strong> - mobile application for IT dating</rp>
 <h2 align="left">Project characteristics and tech-stack</h2>
 
 <ul>
